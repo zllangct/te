@@ -1,0 +1,33 @@
+"lang"
+{
+	"Language"																		"SChinese"
+	"Tokens"
+	{
+
+
+		"DOTA_Tooltip_ability_home_ability_hpmp_granter"									""
+		"DOTA_Tooltip_ability_home_ability_hpmp_granter_Description"						""
+		"DOTA_Tooltip_ability_home_ability_hpmp_granter_Lore"								""
+		"DOTA_Tooltip_hpmp"																""
+		"DOTA_Tooltip_hpmp_Description"													""
+		"DOTA_Tooltip_get_hp_xp"															""
+		"DOTA_Tooltip_get_hp_xp_Description"												""
+		"DOTA_Tooltip_modifier_get_hpmp"													""
+		"DOTA_Tooltip_modifier_get_hpmp_Description"										""
+		"DOTA_Tooltip_AbilitySpecial"														""
+		"DOTA_Tooltip_AbilitySpecial_Description"											""
+
+		"DOTA_Tooltip_ability_item_recipe_arcane_boots2"									""
+		"DOTA_Tooltip_ability_item_recipe_arcane_boots2_Description"						""
+		"DOTA_Tooltip_ability_item_recipe_arcane_boots2_Lore"								""
+
+		"DOTA_Tooltip_ability_item_arcane_boots2"											""
+		"DOTA_Tooltip_ability_item_arcane_boots2_Description"								""
+		"DOTA_Tooltip_ability_item_arcane_boots2_Lore"									""
+		"DOTA_Tooltip_ability_item_arcane_boots2_bonus_movement"							""
+		"DOTA_Tooltip_ability_item_arcane_boots2_bonus_mana"								""
+		"DOTA_Tooltip_ability_item_arcane_boots2_replenish_radius"						""
+		"DOTA_Tooltip_ability_item_arcane_boots2_replenish_amount"						""
+
+	}
+}

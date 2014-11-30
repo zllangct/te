@@ -1,0 +1,72 @@
+// TE Heroes File
+"DOTAAbilities"
+{
+	"Version"       "1"
+	"home_ability_hpmp_granter"
+	{
+		"BaseClass"          			    "ability_datadriven"
+		"AbilityName"           			"dota_ability_hpmp_granter"
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"Modifiers"
+		{
+			"hpmp"
+			{
+				"IsHidden"              "1"
+				"Passive"               "1"
+				"Aura"					"modifier_get_hpmp"
+				"Aura_Radius"			"800"
+				"Aura_Teams"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+				"Aura_Types"			"DOTA_UNIT_TARGET_HERO"
+				"Aura_Flags"			"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+				"States"
+				{
+					"MODIFIER_STATE_UNSELECTABLE"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_NO_HEALTH_BAR"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_INVULNERABLE"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+				"ThinkInterval"         "0.5"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"Target" 			
+						{
+							
+							"Center"		"CASTER"
+							"radius"		"800"
+							"Types"			"DOTA_UNIT_TARGET_HERO"
+						
+						}
+						
+						"ScriptFile" 	"ability/ability_item.lua"
+						
+						"Function"		"home_hpmp_granter"
+					}
+					
+				}
+
+
+			}
+			
+			
+		}
+	}
+	"home_ability_hpmp_granter_special"
+	{
+        "BaseClass"          			    "ability_datadriven"
+		"AbilityName"           			"dota_ability_hpmp_granter_special"
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"modifiers"
+		{
+
+			"modifier_hpmp_granter_special"
+			{
+				"Passive"  "1"
+				"IsHidden"  "1"
+				"EffectName"	"particles/econ/courier/courier_golden_roshan/golden_roshan_ambient.vpcf"
+				"EffectAttachType" "follow_origin"				
+			}
+		}
+	}
+}
